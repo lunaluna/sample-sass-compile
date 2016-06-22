@@ -3,8 +3,8 @@
 ## Sass(.scss)を使う準備
 
 ### node.jsの準備（Windows編)
-1.[公式サイト](https://github.com/marcelklehr/nodist)から「nodist」のインストーラーをダウンロードする
-2.インストールする
+1.[公式サイト](https://github.com/marcelklehr/nodist)から「nodist」のインストーラーをダウンロードする  
+2.インストールする  
 3.コマンドプロンプトを立ち上げて、インストール可能なバージョンを確認する
 ```
 > nodist dist
@@ -27,12 +27,12 @@
 ```
 
 ### node.jsの準備（Mac編)
-1.ターミナルを起動する
+1.ターミナルを起動する  
 2.Githubから「anyenv」をクローンする
 ```
 $ git clone https://github.com/riywo/anyenv ~/.anyenv
 ```
-3.エディタで「.bash_profile」を開く（ない場合はユーザーの直下に新規作成する）
+3.エディタで「.bash_profile」を開く（ない場合はユーザーの直下に新規作成する）  
 4.下記を「.bash_profile」にコピペする
 ```
 export PATH=$HOME/.anyenv/bin:$PATH
