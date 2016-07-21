@@ -9,6 +9,7 @@ $body-color:  white;
 $text-color:  #333;
 $font-size:   16px;
 $site-width:  980px;
+$link-color:  #36c;
 
 
 /***************************/
@@ -194,61 +195,61 @@ $black: #000;
 $red  : #cb5f52;
 
 .f-left {
-	float: left;
+  float: left;
 }
 
 .f-right {
-	float: right;
+  float: right;
 }
 
 .float-n {
-	float: none;
+  float: none;
 }
 
 .pc-float-l {
-	float: left;
-	@include media(s) {
-		float: none;
-	}
+  float: left;
+  @include media(s) {
+    float: none;
+  }
 }
 
 .pc-float-r {
-	float: right;
-	@include media(s) {
-		float: none;
-	}
+  float: right;
+  @include media(s) {
+    float: none;
+  }
 }
 
 .sp-original-br {
-	display: none;
-	@include media(s) {
-		display: block;
-	}
+  display: none;
+  @include media(s) {
+    display: block;
+  }
 }
 
 .al-right {
-	text-align: right;
+  text-align: right;
 }
 
 .al-center {
-	text-align: center;
+  text-align: center;
 }
 
 .al-left {
-	text-align: left;
+  text-align: left;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 .site-width {
-	width: $site-width;
-	margin: 0 auto;
+  width: $site-width;
+  margin: 0 auto;
 }
 
 .strong {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 
