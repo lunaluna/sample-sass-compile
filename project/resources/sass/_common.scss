@@ -1,0 +1,283 @@
+/****************************
+
+Default Valiable
+
+****************************/
+$font-family: sans-serif;
+$line-height: 1.4;
+$body-color:  white;
+$text-color:  #333;
+$font-size:   16px;
+$site-width:  980px;
+
+
+/***************************/
+
+body {
+  position: relative;
+  margin: 0 auto;
+  font-family: $font-family;
+  line-height: $line-height;
+  background: $body-color;
+  color: $text-color;
+  strong {
+    font-weight: bold;
+  }
+  a {
+    color: $link-color;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+button, input, select, option, textarea, label {
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+/*for Webkit*/
+input::-webkit-input-placeholder {
+  color: #bbb;
+}
+/*for Firefox 18-*/
+input:-moz-placeholder {
+  color: #999;
+}
+/*for Firefox 19+*/
+input::-moz-placeholder {
+  color: #999;
+}
+/*for IE*/
+input:-ms-input-placeholder {
+  color: #999;
+}
+
+
+/* mediaquery
+************************************/
+$bp-s : 640px;
+$bp-m : 768px;
+$bp-l : 980px;
+
+@mixin media( $size ) {
+  @if $size == s {
+    @media only screen and ( min-width: $bp-s + 1px ) {
+      @content;
+    }
+  }
+  @else if $size == m {
+    @media only screen and ( min-width: $bp-m + 1px ) {
+      @content;
+    }
+  }
+  @else if $size == l {
+    @media only screen and ( min-width: $bp-l + 1px ) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and ( min-width: $size + 1px ) {
+      @content;
+    }
+  }
+}
+
+.sp-original {
+  display: block;
+  @include media(m) {
+    display: none;
+  }
+}
+
+.pc-original {
+  display: none;
+  @include media(m) {
+    display: block;
+  }
+}
+
+/*************************************/
+
+.f-left {float: left;}
+.f-right {float: right;}
+.float-n {float: none;}
+
+.pc-float-l {
+  float: none;
+  @include media(m) {
+    float: left;
+  }
+}
+
+.pc-float-r {
+  float: none;
+  @include media(m) {
+    float: right;
+  }
+}
+
+.sp-original-br {
+  display: block;
+  @include media(m) {
+    display: none;
+  }
+}
+
+.al-right {text-align: right;}
+.al-center {text-align: center;}
+.al-left {text-align: left;}
+.clear {clear: both;}
+.strong {font-weight: bold;}
+
+.min480 {
+  display: block;
+  @include media(480px) {
+    display: none;
+  }
+}
+
+.lrg480 {
+  display: none;
+  @include media(480px) {
+    display: block;
+  }
+}
+
+.min640 {
+  display: block;
+  @include media(640px) {
+    display: none;
+  }
+}
+
+.lrg640 {
+  display: none;
+  @include media(640px) {
+    display: block;
+  }
+}
+
+.min768 {
+  display: block;
+  @include media(768px) {
+    display: none;
+  }
+}
+
+.lrg768 {
+  display: none;
+  @include media(768px) {
+    display: block;
+  }
+}
+
+.min980 {
+  display: block;
+  @include media(l) {
+    display: none;
+  }
+}
+
+.lrg980 {
+  display: none;
+  @include media(l) {
+    display: block;
+  }
+}
+/*************************************/
+// $namelist: home, staff, store, recruit, contact;
+$white: #fff;
+$black: #000;
+$red  : #cb5f52;
+
+.f-left {
+	float: left;
+}
+
+.f-right {
+	float: right;
+}
+
+.float-n {
+	float: none;
+}
+
+.pc-float-l {
+	float: left;
+	@include media(s) {
+		float: none;
+	}
+}
+
+.pc-float-r {
+	float: right;
+	@include media(s) {
+		float: none;
+	}
+}
+
+.sp-original-br {
+	display: none;
+	@include media(s) {
+		display: block;
+	}
+}
+
+.al-right {
+	text-align: right;
+}
+
+.al-center {
+	text-align: center;
+}
+
+.al-left {
+	text-align: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.site-width {
+	width: $site-width;
+	margin: 0 auto;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+
+.main-title {
+}
+.sub-title {
+}
+.third-title {
+}
+.base-list {
+}
+.base-table {
+}
+.base-btn {
+}
+
+/*layout************************************/
+
+
+
+/*header************************************/
+
+
+
+/*gnavi************************************/
+
+
+
+/*footer************************************/
+
+
+/*breadcrumb************************************/
